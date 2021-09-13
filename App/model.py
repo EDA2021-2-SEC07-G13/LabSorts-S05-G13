@@ -202,11 +202,11 @@ def comparetagnames(name, tag):
 # Funciones de ordenamiento
 
 def sortBooks(catalog, size):
-    # TODO completar modificaciones para el laboratorio 4
     sub_list = lt.subList(catalog['books'], 1, size)
     sub_list = sub_list.copy()
     start_time = time.process_time()
-    sa.sort(sub_list, compareratings)
+    sorted_list = sa.sort(sub_list, compareratings)
     stop_time = time.process_time()
     elapsed_time_mseg = (stop_time - start_time)*1000
-    return elapsed_time_mseg
+    return elapsed_time_mseg, sorted_list
+
