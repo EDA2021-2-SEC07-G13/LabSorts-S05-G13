@@ -90,7 +90,7 @@ def printSortResults(ord_books, sample=10):
             book = lt.getElement(ord_books,i)
             print('Titulo: ' + book['title'] + ' ISBN: ' +
                   book['isbn'] + ' Rating: ' + book['average_rating'])
-        i+=1
+            i+=1
 
 catalog = None
 
